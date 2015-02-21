@@ -112,7 +112,12 @@ static NSString * const BannerIdentifier = @"BannerCell";
             width = endX - originX;
         }
         
-        originY = floorf(self.itemInsets.top + (self.itemSize.height + self.interItemSpacingY) * (row - 1));
+        if( row == 1 ){
+            originY = self.itemInsets.top;
+        }
+        else{
+            originY = floorf(self.itemInsets.top + (self.itemSize.height + self.interItemSpacingY) * (row - 1.3));
+        }
         originY += 50 + self.interItemSpacingY;
     }
     else{

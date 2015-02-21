@@ -65,6 +65,8 @@
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    MyCollectionViewController *mcvc = (MyCollectionViewController *)self.window.rootViewController;
+    
     if( _value > 0 ){
         [self.superview bringSubviewToFront:self];
         

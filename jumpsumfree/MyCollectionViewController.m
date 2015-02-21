@@ -50,6 +50,8 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
         NSMutableArray *items = [[NSMutableArray alloc] initWithCapacity:[self.gameboard getItems]];
         [self.tiles addObject:items];
     }
+    
+    [self loadInterstitial];
 }
 
 - (void)loadInterstitial
