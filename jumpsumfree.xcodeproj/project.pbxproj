@@ -28,7 +28,6 @@
 		D404456D1A97E44600B1FE00 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D404456C1A97E44600B1FE00 /* libc++.dylib */; };
 		D404456F1A97E44B00B1FE00 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D404456E1A97E44B00B1FE00 /* libz.dylib */; };
 		D46E7B701A97DF65000418AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D46E7B6F1A97DF65000418AA /* main.m */; };
-		D46E7B7E1A97DF65000418AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D46E7B7C1A97DF65000418AA /* LaunchScreen.xib */; };
 		D46E7B8A1A97DF65000418AA /* jumpsumfreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D46E7B891A97DF65000418AA /* jumpsumfreeTests.m */; };
 		D46E7B951A97DFA6000418AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D46E7B941A97DFA6000418AA /* AppDelegate.m */; };
 		D46E7B9C1A97DFD3000418AA /* JumpSum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46E7B971A97DFD3000418AA /* JumpSum.storyboard */; };
@@ -47,7 +46,7 @@
 		D46E7BED1A97E055000418AA /* example2.png in Resources */ = {isa = PBXBuildFile; fileRef = D46E7BE81A97E055000418AA /* example2.png */; };
 		D46E7BEE1A97E055000418AA /* example3.png in Resources */ = {isa = PBXBuildFile; fileRef = D46E7BE91A97E055000418AA /* example3.png */; };
 		D46E7BEF1A97E055000418AA /* example4.png in Resources */ = {isa = PBXBuildFile; fileRef = D46E7BEA1A97E055000418AA /* example4.png */; };
-		D46E7BF01A97E055000418AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46E7BEB1A97E055000418AA /* Images.xcassets */; };
+		D47826311A99136D009CD98B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47826301A99136D009CD98B /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +83,6 @@
 		D46E7B6A1A97DF65000418AA /* jumpsumfree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jumpsumfree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46E7B6E1A97DF65000418AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D46E7B6F1A97DF65000418AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D46E7B7D1A97DF65000418AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D46E7B831A97DF65000418AA /* jumpsumfreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jumpsumfreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46E7B881A97DF65000418AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D46E7B891A97DF65000418AA /* jumpsumfreeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jumpsumfreeTests.m; sourceTree = "<group>"; };
@@ -117,7 +115,7 @@
 		D46E7BE81A97E055000418AA /* example2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example2.png; sourceTree = "<group>"; };
 		D46E7BE91A97E055000418AA /* example3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example3.png; sourceTree = "<group>"; };
 		D46E7BEA1A97E055000418AA /* example4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example4.png; sourceTree = "<group>"; };
-		D46E7BEB1A97E055000418AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D47826301A99136D009CD98B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +210,6 @@
 				D46E7BE61A97E048000418AA /* Images */,
 				D46E7B931A97DFA6000418AA /* AppDelegate.h */,
 				D46E7B941A97DFA6000418AA /* AppDelegate.m */,
-				D46E7B7C1A97DF65000418AA /* LaunchScreen.xib */,
 				D46E7B6D1A97DF65000418AA /* Supporting Files */,
 			);
 			path = jumpsumfree;
@@ -298,11 +295,11 @@
 		D46E7BE61A97E048000418AA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D47826301A99136D009CD98B /* Images.xcassets */,
 				D46E7BE71A97E055000418AA /* example1.png */,
 				D46E7BE81A97E055000418AA /* example2.png */,
 				D46E7BE91A97E055000418AA /* example3.png */,
 				D46E7BEA1A97E055000418AA /* example4.png */,
-				D46E7BEB1A97E055000418AA /* Images.xcassets */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -387,12 +384,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D46E7BF01A97E055000418AA /* Images.xcassets in Resources */,
+				D47826311A99136D009CD98B /* Images.xcassets in Resources */,
 				D46E7BEE1A97E055000418AA /* example3.png in Resources */,
 				D404454F1A97E3C400B1FE00 /* GooglePlus.bundle in Resources */,
 				D40445531A97E3CE00B1FE00 /* GooglePlayGames.bundle in Resources */,
 				D46E7B9C1A97DFD3000418AA /* JumpSum.storyboard in Resources */,
-				D46E7B7E1A97DF65000418AA /* LaunchScreen.xib in Resources */,
 				D46E7BEC1A97E055000418AA /* example1.png in Resources */,
 				D46E7BED1A97E055000418AA /* example2.png in Resources */,
 				D46E7BEF1A97E055000418AA /* example4.png in Resources */,
@@ -446,17 +442,6 @@
 			targetProxy = D46E7B841A97DF65000418AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D46E7B7C1A97DF65000418AA /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D46E7B7D1A97DF65000418AA /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D46E7B8B1A97DF65000418AA /* Debug */ = {
@@ -539,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -560,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
