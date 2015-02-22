@@ -66,23 +66,26 @@
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     MyCollectionViewController *mcvc = (MyCollectionViewController *)self.window.rootViewController;
+    if( [mcvc canDrag:self] ){
+        _moving = YES;
     
-    if( _value > 0 ){
-        [self.superview bringSubviewToFront:self];
-        
-        self.originalPosition = self.center;
-        UITouch *touch = [touches anyObject];
-        CGPoint position = [touch locationInView: self.superview];
-        
-        self.touchOffset = CGPointMake(self.center.x - position.x,self.center.y - position.y);
-        
-        [self highlightValidTargets:YES];
+        if( _value > 0 ){
+            [self.superview bringSubviewToFront:self];
+            
+            self.originalPosition = self.center;
+            UITouch *touch = [touches anyObject];
+            CGPoint position = [touch locationInView: self.superview];
+            
+            self.touchOffset = CGPointMake(self.center.x - position.x,self.center.y - position.y);
+            
+            [self highlightValidTargets:YES];
+        }
     }
 }
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    if( _value > 0 ){
+    if( _moving && _value > 0 ){
         UITouch *touch = [touches anyObject];
         CGPoint position = [touch locationInView: self.superview];
         
@@ -99,7 +102,7 @@
 
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    if( _value > 0 ){
+    if( _moving && _value > 0 ){
         UITouch *touch = [touches anyObject];
         CGPoint position = [touch locationInView: self.superview];
         
@@ -122,19 +125,31 @@
                              completion:^(BOOL finished) {}];
         }
     }
+    
+    MyCollectionViewController *mcvc = (MyCollectionViewController *)self.window.rootViewController;
+    [mcvc finishedDrag:self];
+    
+    _moving = NO;
 }
 
 -(void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [UIView animateWithDuration:0.4
-                          delay:0.0
-                        options:UIViewAnimationOptionCurveEaseInOut
-                     animations:^ {
-                         self.center = self.originalPosition;
-                     }
-                     completion:^(BOOL finished) {}];
+    if( _moving ){
+        [UIView animateWithDuration:0.4
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseInOut
+                         animations:^ {
+                             self.center = self.originalPosition;
+                         }
+                         completion:^(BOOL finished) {}];
+        
+        [self highlightValidTargets:NO];
+    }
     
-    [self highlightValidTargets:NO];
+    MyCollectionViewController *mcvc = (MyCollectionViewController *)self.window.rootViewController;
+    [mcvc finishedDrag:self];
+    
+    _moving = NO;
 }
 
 

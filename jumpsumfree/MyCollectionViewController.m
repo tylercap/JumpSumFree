@@ -295,6 +295,42 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
     [self refreshInterfaceBasedOnSignIn];
 }
 
+- (Boolean)canDrag:(UICollectionViewCell *)cell
+{
+    if( ![cell isKindOfClass:[MyCollectionViewCell class]] )
+    {
+        return NO;
+    }
+    
+    MyCollectionViewCell* mcvc = (MyCollectionViewCell*)cell;
+    if( _movingCell == nil )
+    {
+        _movingCell = mcvc;
+        return YES;
+    }
+    
+    return _movingCell == mcvc;
+}
+
+- (void)finishedDrag:(UICollectionViewCell *)cell
+{
+    if( ![cell isKindOfClass:[MyCollectionViewCell class]] )
+    {
+        return;
+    }
+    
+    MyCollectionViewCell* mcvc = (MyCollectionViewCell*)cell;
+    if( _movingCell == nil )
+    {
+        return;
+    }
+    
+    if( _movingCell == mcvc )
+    {
+        _movingCell = nil;
+    }
+}
+
 - (NSMutableArray *)getValidTargets:(NSInteger)row
                              column:(NSInteger)column
 {

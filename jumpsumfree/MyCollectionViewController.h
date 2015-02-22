@@ -23,6 +23,7 @@
 @property (nonatomic, weak) IBOutlet MyCollectionViewLayout *layout;
 @property(strong, nonatomic) Gameboard *gameboard;
 @property(strong, nonatomic) NSMutableArray *tiles;
+@property (strong, atomic) UICollectionViewCell* movingCell;
 
 @property (strong, nonatomic) GADInterstitial *interstitial;
 @property (nonatomic) Boolean signedIn;
@@ -43,6 +44,8 @@
                    highlight:(Boolean)highlight;
 -(Boolean)jumpedTile:(NSIndexPath *)indexPath
              landing:(CGPoint)dropTarget;
+-(Boolean)canDrag:(UICollectionViewCell *)cell;
+-(void)finishedDrag:(UICollectionViewCell *)cell;
 
 @end
 

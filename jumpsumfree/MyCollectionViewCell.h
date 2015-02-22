@@ -13,6 +13,7 @@
 
 @property (nonatomic, weak) IBOutlet UILabel *title;
 @property (nonatomic) NSInteger value;
+@property (atomic) Boolean moving;
 @property (nonatomic, assign) CGPoint touchOffset;
 @property (nonatomic, assign) CGPoint originalPosition;
 
