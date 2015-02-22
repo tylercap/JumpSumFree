@@ -29,6 +29,9 @@
         NSString *text = [NSString stringWithFormat:@"%ld",(long)value];
         self.title.text = text;
     }
+    else if( value < -1){
+        [self setHidden:YES];
+    }
     else{
         self.title.text = @"";
     }

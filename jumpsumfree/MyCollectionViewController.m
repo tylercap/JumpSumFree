@@ -419,7 +419,7 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
     if( jumpedTile.value <= 0 ){
         return NO;
     }
-    if( landingTile.value > 0 ){
+    if( landingTile.value != -1 ){
         return NO;
     }
     
