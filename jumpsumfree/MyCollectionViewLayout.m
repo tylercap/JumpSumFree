@@ -17,15 +17,15 @@ static NSString * const BannerIdentifier = @"BannerCell";
 
 - (void)setup
 {
-    float spacing = 7.0f;
-    self.itemInsets = UIEdgeInsetsMake(spacing * 3, spacing, spacing, spacing);
+    float spacing = 4.0f;
+    self.itemInsets = UIEdgeInsetsMake(spacing * 4, spacing, spacing, spacing);
     
     self.numberOfRows = [self.collectionView numberOfSections];
     self.numberOfColumns = [self.collectionView numberOfItemsInSection:3];
     
     CGSize size = [UIScreen mainScreen].bounds.size;
     CGFloat availableWidth  = size.width - (spacing * (self.numberOfColumns + 1));
-    CGFloat availableHeight = size.height - (spacing * (self.numberOfRows + 1));
+    CGFloat availableHeight = size.height - (spacing * (self.numberOfRows + 3));
     
     availableHeight -= 50;
     CGFloat width = availableWidth / self.numberOfColumns;
@@ -92,15 +92,13 @@ static NSString * const BannerIdentifier = @"BannerCell";
         if( column == 0 ){
             originX = floorf(self.itemInsets.left);
             
-            height = self.itemSize.height / 2;
-            width = self.itemSize.width * 1.5;
+            width = self.itemSize.width * 1.4;
         }
         else if( column == [self.collectionView numberOfItemsInSection:row] - 1 ){
-            originX = floorf(self.itemInsets.left + (self.itemSize.width + self.interItemSpacingX) * (self.numberOfColumns - 1.5));
+            originX = floorf(self.itemInsets.left + (self.itemSize.width + self.interItemSpacingX) * (self.numberOfColumns - 1.4));
             originX += self.interItemSpacingX / 2;
             
-            height = self.itemSize.height / 2;
-            width = self.itemSize.width * 1.5;
+            width = self.itemSize.width * 1.4;
         }
         else{
             originX = floorf(self.itemInsets.left + (self.itemSize.width * 1.5) + self.interItemSpacingX);
@@ -108,27 +106,21 @@ static NSString * const BannerIdentifier = @"BannerCell";
             CGSize size = [UIScreen mainScreen].bounds.size;
             CGFloat endX = size.width - (self.itemSize.width * 1.5) - self.interItemSpacingX;
             
-            height = self.itemSize.height / 2;
             width = endX - originX;
         }
         
-        if( row == 1 ){
-            originY = self.itemInsets.top;
-        }
-        else{
-            originY = floorf(self.itemInsets.top + (self.itemSize.height + self.interItemSpacingY) * (row - 1.3));
-        }
-        originY += 50 + self.interItemSpacingY;
+        originY = floorf(self.itemInsets.top + (self.itemSize.height + self.interItemSpacingY) * (row - 1));
+        
+        originY += 50;
+        
+        height = self.itemSize.height;
     }
     else{
         originX = floorf(self.itemInsets.left + (self.itemSize.width + self.interItemSpacingX) * column);
         
-        CGFloat headerHeight = floorf( (self.itemSize.height / 2) + self.interItemSpacingY );
-        headerHeight += 50 + self.interItemSpacingY;
+        originY = floorf(self.itemInsets.top + (self.itemSize.height + self.interItemSpacingY) * (row - 1));
         
-        originY = floorf(self.itemInsets.top + (self.itemSize.height + self.interItemSpacingY) * (row - 2));
-        
-        originY += headerHeight;
+        originY += 50;
         
         height = self.itemSize.height;
         width = self.itemSize.width;
