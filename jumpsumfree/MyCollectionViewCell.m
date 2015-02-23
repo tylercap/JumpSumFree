@@ -22,10 +22,13 @@
 }
 
 - (void)setLabel:(NSInteger)value
+          parent:(UIViewController *)parent
 {
     self.value = value;
+    self.parentController = parent;
 
     if( value > 0 ){
+        [self setHidden:NO];
         NSString *text = [NSString stringWithFormat:@"%ld",(long)value];
         self.title.text = text;
     }
@@ -33,6 +36,7 @@
         [self setHidden:YES];
     }
     else{
+        [self setHidden:NO];
         self.title.text = @"";
     }
     
@@ -62,13 +66,13 @@
 {
     UICollectionView *collectionView = (UICollectionView*)self.superview;
     NSIndexPath *indexPath = [collectionView indexPathForCell:self];
-    MyCollectionViewController *mcvc = (MyCollectionViewController *)self.window.rootViewController;
+    MyCollectionViewController *mcvc = (MyCollectionViewController *)_parentController;
     [mcvc highlightValidTargets:indexPath highlight:highlight];
 }
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    MyCollectionViewController *mcvc = (MyCollectionViewController *)self.window.rootViewController;
+    MyCollectionViewController *mcvc = (MyCollectionViewController *)_parentController;
     if( [mcvc canDrag:self] ){
         _moving = YES;
     
@@ -113,7 +117,7 @@
         
         UICollectionView *collectionView = (UICollectionView*)self.superview;
         NSIndexPath *indexPath = [collectionView indexPathForCell:self];
-        MyCollectionViewController *mcvc = (MyCollectionViewController *)self.window.rootViewController;
+        MyCollectionViewController *mcvc = (MyCollectionViewController *)_parentController;
         
         if( [mcvc jumpedTile:indexPath landing:position] ){
             self.center = self.originalPosition;
@@ -129,7 +133,7 @@
         }
     }
     
-    MyCollectionViewController *mcvc = (MyCollectionViewController *)self.window.rootViewController;
+    MyCollectionViewController *mcvc = (MyCollectionViewController *)_parentController;
     [mcvc finishedDrag:self];
     
     _moving = NO;
@@ -149,7 +153,7 @@
         [self highlightValidTargets:NO];
     }
     
-    MyCollectionViewController *mcvc = (MyCollectionViewController *)self.window.rootViewController;
+    MyCollectionViewController *mcvc = (MyCollectionViewController *)_parentController;
     [mcvc finishedDrag:self];
     
     _moving = NO;

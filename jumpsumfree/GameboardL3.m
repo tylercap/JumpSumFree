@@ -8,7 +8,6 @@
 
 #import "GameboardL3.h"
 
-int values[7][5];
 static NSString * const Sandbox = @"GameboardL3.plist";
 static NSString * const HSSandbox = @"HighScoreL3.txt";
 

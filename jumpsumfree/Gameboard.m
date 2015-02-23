@@ -8,6 +8,8 @@
 
 #import "Gameboard.h"
 
+int values[8][7];
+
 @implementation Gameboard
 
 - (id)init

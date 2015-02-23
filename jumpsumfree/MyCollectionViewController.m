@@ -29,7 +29,39 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
     if (_gameboard != nil) {
         return _gameboard;
     }
-    _gameboard = [[GameboardL1 alloc] init];
+    
+    switch( _level ){
+        case 2:
+            _gameboard = [[GameboardL2 alloc] init];
+            break;
+        case 3:
+            _gameboard = [[GameboardL3 alloc] init];
+            break;
+        case 4:
+            _gameboard = [[GameboardL4 alloc] init];
+            break;
+        case 5:
+            _gameboard = [[GameboardL5 alloc] init];
+            break;
+        case 6:
+            _gameboard = [[GameboardL6 alloc] init];
+            break;
+        case 7:
+            _gameboard = [[GameboardL7 alloc] init];
+            break;
+        case 8:
+            _gameboard = [[GameboardL8 alloc] init];
+            break;
+        case 9:
+            _gameboard = [[GameboardL9 alloc] init];
+            break;
+        case 10:
+            _gameboard = [[GameboardL10 alloc] init];
+            break;
+        default:
+            _gameboard = [[GameboardL1 alloc] init];
+    }
+    
     return _gameboard;
 }
 
@@ -113,10 +145,10 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
             MyCollectionViewCell *jumpedTile = (MyCollectionViewCell*)validTarget.jumpedCell;
             
             NSInteger landingValue = draggedTile.value + jumpedTile.value;
-            [landingTile setLabel:landingValue];
+            [landingTile setLabel:landingValue parent:self];
             
-            [draggedTile setLabel:-1];
-            [jumpedTile setLabel:-1];
+            [draggedTile setLabel:-1 parent:self];
+            [jumpedTile setLabel:-1 parent:self];
             
             // still have to update the gameboard data
             [self.gameboard setValueAt:-1
@@ -474,7 +506,7 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
     //NSString *value = [self.gameboard getValueAt:row column:column];
     NSInteger value = [self.gameboard getIntValueAt:row column:column];
     
-    [myCell setLabel:value];
+    [myCell setLabel:value parent:self];
     
     return myCell;
 }

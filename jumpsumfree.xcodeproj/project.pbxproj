@@ -56,6 +56,7 @@
 		D4D340C11A9BBFB700EB1F48 /* GameboardL8.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340B61A9BBFB700EB1F48 /* GameboardL8.m */; };
 		D4D340C21A9BBFB700EB1F48 /* GameboardL9.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340B81A9BBFB700EB1F48 /* GameboardL9.m */; };
 		D4D340C31A9BBFB700EB1F48 /* GameboardL10.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340BA1A9BBFB700EB1F48 /* GameboardL10.m */; };
+		D4D340C61A9BC2E000EB1F48 /* MyMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340C51A9BC2E000EB1F48 /* MyMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,8 @@
 		D4D340B81A9BBFB700EB1F48 /* GameboardL9.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL9.m; sourceTree = "<group>"; };
 		D4D340B91A9BBFB700EB1F48 /* GameboardL10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL10.h; sourceTree = "<group>"; };
 		D4D340BA1A9BBFB700EB1F48 /* GameboardL10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL10.m; sourceTree = "<group>"; };
+		D4D340C41A9BC2E000EB1F48 /* MyMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMenuViewController.h; sourceTree = "<group>"; };
+		D4D340C51A9BC2E000EB1F48 /* MyMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +275,8 @@
 			isa = PBXGroup;
 			children = (
 				D46E7B971A97DFD3000418AA /* JumpSum.storyboard */,
+				D4D340C41A9BC2E000EB1F48 /* MyMenuViewController.h */,
+				D4D340C51A9BC2E000EB1F48 /* MyMenuViewController.m */,
 				D46E7B981A97DFD3000418AA /* MyCollectionViewController.h */,
 				D46E7B991A97DFD3000418AA /* MyCollectionViewController.m */,
 				D46E7B9A1A97DFD3000418AA /* MyCollectionViewLayout.h */,
@@ -476,6 +481,7 @@
 				D4D340BC1A9BBFB700EB1F48 /* GameboardL3.m in Sources */,
 				D4D340BF1A9BBFB700EB1F48 /* GameboardL6.m in Sources */,
 				D4D340C11A9BBFB700EB1F48 /* GameboardL8.m in Sources */,
+				D4D340C61A9BC2E000EB1F48 /* MyMenuViewController.m in Sources */,
 				D46E7BAC1A97DFFC000418AA /* GameboardL1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

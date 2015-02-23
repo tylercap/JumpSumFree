@@ -8,7 +8,6 @@
 
 #import "GameboardL2.h"
 
-int values[7][5];
 static NSString * const Sandbox = @"GameboardL2.plist";
 static NSString * const HSSandbox = @"HighScoreL2.txt";
 
@@ -21,7 +20,7 @@ static NSString * const HSSandbox = @"HighScoreL2.txt";
 
 -(NSInteger)getItems
 {
-    return 5;
+    return 6;
 }
 
 -(void)loadNewGame
@@ -44,12 +43,20 @@ static NSString * const HSSandbox = @"HighScoreL2.txt";
         NSMutableArray* row = [[NSMutableArray alloc] init];
         [array addObject:row];
         
-        for( int j=0; j<5; j++ ){
-            NSUInteger index = arc4random_uniform(remaining);
-            [row addObject:[values objectAtIndex:index]];
-            
-            [values removeObjectAtIndex:index];
-            remaining--;
+        for( int j=0; j<6; j++ ){
+            if( (i % 2 == 0 && j == 5) ||
+                (i % 2 == 1 && j == 0) )
+            {
+                [row addObject:@"-2"];
+            }
+            else
+            {
+                NSUInteger index = arc4random_uniform(remaining);
+                [row addObject:[values objectAtIndex:index]];
+                
+                [values removeObjectAtIndex:index];
+                remaining--;
+            }
         }
     }
     

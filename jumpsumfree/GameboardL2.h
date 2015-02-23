@@ -8,8 +8,6 @@
 
 #import "Gameboard.h"
 
-extern int values[7][5];
-
 @interface GameboardL2 : Gameboard
 
 @property (nonatomic, strong) NSString *arrayPath;

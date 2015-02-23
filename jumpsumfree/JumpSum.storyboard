@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cSo-An-kpR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fLD-kS-1J6">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -118,8 +118,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osq-NG-gsj" customClass="GADBannerView">
-                                            <rect key="frame" x="-135.5" y="0.0" width="320" height="50"/>
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="osq-NG-gsj" customClass="GADBannerView">
+                                            <rect key="frame" x="-136" y="0.0" width="320" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="320" id="7Yq-MP-AUW"/>
                                                 <constraint firstAttribute="height" constant="50" id="nHy-Pw-lP1"/>
@@ -147,6 +147,183 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qrS-W4-48k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="98" y="795"/>
+        </scene>
+        <!--My Menu View Controller-->
+        <scene sceneID="HdJ-kg-SSd">
+            <objects>
+                <viewController id="fLD-kS-1J6" customClass="MyMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="30k-WN-ygZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="tAQ-KM-OZ7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QLF-Q4-9PC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9i-4D-uc1" customClass="GADBannerView">
+                                <rect key="frame" x="140" y="10" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5ZT-Kf-8iO"/>
+                                    <constraint firstAttribute="width" constant="320" id="lNl-HN-fg2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="adUnitID" value="ca-app-pub-8484316959485082/7478851650"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvY-I3-XA9">
+                                <rect key="frame" x="36" y="80" width="528" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Level 1">
+                                    <color key="titleColor" red="0.0" green="3.6090286189999997e-05" blue="0.44004755429999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cSo-An-kpR" kind="show" identifier="Level1" id="WAr-Tz-wm7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmr-uc-arD">
+                                <rect key="frame" x="36" y="120" width="528" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Level 2">
+                                    <color key="titleColor" red="0.0" green="3.6090286189999997e-05" blue="0.44004755429999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cSo-An-kpR" kind="show" identifier="Level2" id="wnO-9C-39j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIB-WA-Zqj">
+                                <rect key="frame" x="36" y="160" width="528" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Level 3">
+                                    <color key="titleColor" red="0.0" green="3.6090286189999997e-05" blue="0.44004755429999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cSo-An-kpR" kind="show" identifier="Level3" id="bwB-Oe-oqK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZ8-2l-qYG">
+                                <rect key="frame" x="36" y="200" width="528" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Level 4">
+                                    <color key="titleColor" red="0.0" green="3.6090286189999997e-05" blue="0.44004755429999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cSo-An-kpR" kind="show" identifier="Level4" id="LT3-DT-yKV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd5-zw-zXJ">
+                                <rect key="frame" x="36" y="240" width="528" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Level 5">
+                                    <color key="titleColor" red="0.0" green="3.6090286189999997e-05" blue="0.44004755429999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cSo-An-kpR" kind="show" identifier="Level5" id="Cze-qe-9WK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJz-WA-86b">
+                                <rect key="frame" x="36" y="280" width="528" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Level 6">
+                                    <color key="titleColor" red="0.0" green="3.6090286189999997e-05" blue="0.44004755429999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cSo-An-kpR" kind="show" identifier="Level6" id="gRm-X1-yIU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hq-CL-yIO">
+                                <rect key="frame" x="36" y="320" width="528" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Level 7">
+                                    <color key="titleColor" red="0.0" green="3.6090286189999997e-05" blue="0.44004755429999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cSo-An-kpR" kind="show" identifier="Level7" id="bhh-DZ-51t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5Z-7d-bYq">
+                                <rect key="frame" x="36" y="360" width="528" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Level 8">
+                                    <color key="titleColor" red="0.0" green="3.6090286189999997e-05" blue="0.44004755429999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cSo-An-kpR" kind="show" identifier="Level8" id="57O-gR-1a9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WS-89-aGg">
+                                <rect key="frame" x="36" y="400" width="528" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Level 9">
+                                    <color key="titleColor" red="0.0" green="3.6090286189999997e-05" blue="0.44004755429999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cSo-An-kpR" kind="show" identifier="Level9" id="Lxl-6Q-QKB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4t-in-8pN">
+                                <rect key="frame" x="36" y="440" width="528" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Level 10">
+                                    <color key="titleColor" red="0.0" green="3.6090286189999997e-05" blue="0.44004755429999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cSo-An-kpR" kind="show" identifier="Level10" id="lyW-nP-bWr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30228381269999999" green="0.5660414788" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="A4t-in-8pN" firstAttribute="top" secondItem="1WS-89-aGg" secondAttribute="bottom" constant="10" id="0Uk-GC-o34"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H5Z-7d-bYq" secondAttribute="trailing" constant="20" id="0WX-GJ-u9q"/>
+                            <constraint firstItem="Mmr-uc-arD" firstAttribute="top" secondItem="tvY-I3-XA9" secondAttribute="bottom" constant="10" id="1HK-vf-8j4"/>
+                            <constraint firstItem="H5Z-7d-bYq" firstAttribute="top" secondItem="1hq-CL-yIO" secondAttribute="bottom" constant="10" id="1a2-WP-Db7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tvY-I3-XA9" secondAttribute="trailing" constant="20" id="3Sb-EG-tJv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fd5-zw-zXJ" secondAttribute="trailing" constant="20" id="3x3-Wb-hcJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A4t-in-8pN" secondAttribute="trailing" constant="20" id="8Zk-Lp-FQ5"/>
+                            <constraint firstItem="1WS-89-aGg" firstAttribute="top" secondItem="H5Z-7d-bYq" secondAttribute="bottom" constant="10" id="8lo-wI-VBM"/>
+                            <constraint firstItem="xJz-WA-86b" firstAttribute="top" secondItem="fd5-zw-zXJ" secondAttribute="bottom" constant="10" id="9bf-PC-N80"/>
+                            <constraint firstItem="1hq-CL-yIO" firstAttribute="leading" secondItem="QLF-Q4-9PC" secondAttribute="leadingMargin" constant="20" id="Ang-GU-0UU"/>
+                            <constraint firstAttribute="centerX" secondItem="u9i-4D-uc1" secondAttribute="centerX" id="BSn-pV-lNP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VIB-WA-Zqj" secondAttribute="trailing" constant="20" id="BUX-DY-fDM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1WS-89-aGg" secondAttribute="trailing" constant="20" id="RkG-ie-f96"/>
+                            <constraint firstItem="A4t-in-8pN" firstAttribute="leading" secondItem="QLF-Q4-9PC" secondAttribute="leadingMargin" constant="20" id="SSk-EK-IM1"/>
+                            <constraint firstItem="u9i-4D-uc1" firstAttribute="top" secondItem="QLF-Q4-9PC" secondAttribute="topMargin" constant="10" id="SiF-ba-8vv"/>
+                            <constraint firstItem="1WS-89-aGg" firstAttribute="leading" secondItem="QLF-Q4-9PC" secondAttribute="leadingMargin" constant="20" id="Wja-Jd-ZDT"/>
+                            <constraint firstItem="AZ8-2l-qYG" firstAttribute="leading" secondItem="QLF-Q4-9PC" secondAttribute="leadingMargin" constant="20" id="Ymz-cz-UaJ"/>
+                            <constraint firstItem="fd5-zw-zXJ" firstAttribute="leading" secondItem="QLF-Q4-9PC" secondAttribute="leadingMargin" constant="20" id="Zma-lQ-Tpc"/>
+                            <constraint firstItem="tvY-I3-XA9" firstAttribute="top" secondItem="u9i-4D-uc1" secondAttribute="bottom" constant="20" id="eA7-Ti-EWC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1hq-CL-yIO" secondAttribute="trailing" constant="20" id="gW6-xp-9oA"/>
+                            <constraint firstItem="1hq-CL-yIO" firstAttribute="top" secondItem="xJz-WA-86b" secondAttribute="bottom" constant="10" id="hGe-zA-fX2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mmr-uc-arD" secondAttribute="trailing" constant="20" id="hf0-oN-xdt"/>
+                            <constraint firstItem="VIB-WA-Zqj" firstAttribute="leading" secondItem="QLF-Q4-9PC" secondAttribute="leadingMargin" constant="20" id="i3y-RA-Pej"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xJz-WA-86b" secondAttribute="trailing" constant="20" id="jIL-7C-GAb"/>
+                            <constraint firstItem="VIB-WA-Zqj" firstAttribute="top" secondItem="Mmr-uc-arD" secondAttribute="bottom" constant="10" id="mOA-tp-zEs"/>
+                            <constraint firstItem="AZ8-2l-qYG" firstAttribute="top" secondItem="VIB-WA-Zqj" secondAttribute="bottom" constant="10" id="nQt-Zp-My6"/>
+                            <constraint firstItem="H5Z-7d-bYq" firstAttribute="leading" secondItem="QLF-Q4-9PC" secondAttribute="leadingMargin" constant="20" id="pRR-Qi-GeK"/>
+                            <constraint firstItem="xJz-WA-86b" firstAttribute="leading" secondItem="QLF-Q4-9PC" secondAttribute="leadingMargin" constant="20" id="qLz-Th-5Ls"/>
+                            <constraint firstItem="fd5-zw-zXJ" firstAttribute="top" secondItem="AZ8-2l-qYG" secondAttribute="bottom" constant="10" id="qfW-b7-4gh"/>
+                            <constraint firstItem="Mmr-uc-arD" firstAttribute="leading" secondItem="QLF-Q4-9PC" secondAttribute="leadingMargin" constant="20" id="qow-eE-SoH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AZ8-2l-qYG" secondAttribute="trailing" constant="20" id="x3E-zF-h7R"/>
+                            <constraint firstItem="tvY-I3-XA9" firstAttribute="leading" secondItem="QLF-Q4-9PC" secondAttribute="leadingMargin" constant="20" id="yl7-Qe-rqh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerAd" destination="u9i-4D-uc1" id="4QF-k1-TpD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u66-9E-zCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-621" y="795"/>
         </scene>
         <!--How To View Controller-->
         <scene sceneID="VC3-02-VLB">
@@ -214,4 +391,7 @@
             <point key="canvasLocation" x="788" y="1475"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lyW-nP-bWr"/>
+    </inferredMetricsTieBreakers>
 </document>
