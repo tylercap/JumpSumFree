@@ -47,6 +47,15 @@
 		D46E7BEE1A97E055000418AA /* example3.png in Resources */ = {isa = PBXBuildFile; fileRef = D46E7BE91A97E055000418AA /* example3.png */; };
 		D46E7BEF1A97E055000418AA /* example4.png in Resources */ = {isa = PBXBuildFile; fileRef = D46E7BEA1A97E055000418AA /* example4.png */; };
 		D47826311A99136D009CD98B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47826301A99136D009CD98B /* Images.xcassets */; };
+		D4D340BB1A9BBFB700EB1F48 /* GameboardL2.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340AA1A9BBFB700EB1F48 /* GameboardL2.m */; };
+		D4D340BC1A9BBFB700EB1F48 /* GameboardL3.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340AC1A9BBFB700EB1F48 /* GameboardL3.m */; };
+		D4D340BD1A9BBFB700EB1F48 /* GameboardL4.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340AE1A9BBFB700EB1F48 /* GameboardL4.m */; };
+		D4D340BE1A9BBFB700EB1F48 /* GameboardL5.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340B01A9BBFB700EB1F48 /* GameboardL5.m */; };
+		D4D340BF1A9BBFB700EB1F48 /* GameboardL6.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340B21A9BBFB700EB1F48 /* GameboardL6.m */; };
+		D4D340C01A9BBFB700EB1F48 /* GameboardL7.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340B41A9BBFB700EB1F48 /* GameboardL7.m */; };
+		D4D340C11A9BBFB700EB1F48 /* GameboardL8.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340B61A9BBFB700EB1F48 /* GameboardL8.m */; };
+		D4D340C21A9BBFB700EB1F48 /* GameboardL9.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340B81A9BBFB700EB1F48 /* GameboardL9.m */; };
+		D4D340C31A9BBFB700EB1F48 /* GameboardL10.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340BA1A9BBFB700EB1F48 /* GameboardL10.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +125,24 @@
 		D46E7BE91A97E055000418AA /* example3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example3.png; sourceTree = "<group>"; };
 		D46E7BEA1A97E055000418AA /* example4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example4.png; sourceTree = "<group>"; };
 		D47826301A99136D009CD98B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4D340A91A9BBFB700EB1F48 /* GameboardL2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL2.h; sourceTree = "<group>"; };
+		D4D340AA1A9BBFB700EB1F48 /* GameboardL2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL2.m; sourceTree = "<group>"; };
+		D4D340AB1A9BBFB700EB1F48 /* GameboardL3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL3.h; sourceTree = "<group>"; };
+		D4D340AC1A9BBFB700EB1F48 /* GameboardL3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL3.m; sourceTree = "<group>"; };
+		D4D340AD1A9BBFB700EB1F48 /* GameboardL4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL4.h; sourceTree = "<group>"; };
+		D4D340AE1A9BBFB700EB1F48 /* GameboardL4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL4.m; sourceTree = "<group>"; };
+		D4D340AF1A9BBFB700EB1F48 /* GameboardL5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL5.h; sourceTree = "<group>"; };
+		D4D340B01A9BBFB700EB1F48 /* GameboardL5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL5.m; sourceTree = "<group>"; };
+		D4D340B11A9BBFB700EB1F48 /* GameboardL6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL6.h; sourceTree = "<group>"; };
+		D4D340B21A9BBFB700EB1F48 /* GameboardL6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL6.m; sourceTree = "<group>"; };
+		D4D340B31A9BBFB700EB1F48 /* GameboardL7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL7.h; sourceTree = "<group>"; };
+		D4D340B41A9BBFB700EB1F48 /* GameboardL7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL7.m; sourceTree = "<group>"; };
+		D4D340B51A9BBFB700EB1F48 /* GameboardL8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL8.h; sourceTree = "<group>"; };
+		D4D340B61A9BBFB700EB1F48 /* GameboardL8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL8.m; sourceTree = "<group>"; };
+		D4D340B71A9BBFB700EB1F48 /* GameboardL9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL9.h; sourceTree = "<group>"; };
+		D4D340B81A9BBFB700EB1F48 /* GameboardL9.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL9.m; sourceTree = "<group>"; };
+		D4D340B91A9BBFB700EB1F48 /* GameboardL10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL10.h; sourceTree = "<group>"; };
+		D4D340BA1A9BBFB700EB1F48 /* GameboardL10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL10.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +298,24 @@
 				D46E7BA81A97DFFC000418AA /* Gameboard.m */,
 				D46E7BA91A97DFFC000418AA /* GameboardL1.h */,
 				D46E7BAA1A97DFFC000418AA /* GameboardL1.m */,
+				D4D340A91A9BBFB700EB1F48 /* GameboardL2.h */,
+				D4D340AA1A9BBFB700EB1F48 /* GameboardL2.m */,
+				D4D340AB1A9BBFB700EB1F48 /* GameboardL3.h */,
+				D4D340AC1A9BBFB700EB1F48 /* GameboardL3.m */,
+				D4D340AD1A9BBFB700EB1F48 /* GameboardL4.h */,
+				D4D340AE1A9BBFB700EB1F48 /* GameboardL4.m */,
+				D4D340AF1A9BBFB700EB1F48 /* GameboardL5.h */,
+				D4D340B01A9BBFB700EB1F48 /* GameboardL5.m */,
+				D4D340B11A9BBFB700EB1F48 /* GameboardL6.h */,
+				D4D340B21A9BBFB700EB1F48 /* GameboardL6.m */,
+				D4D340B31A9BBFB700EB1F48 /* GameboardL7.h */,
+				D4D340B41A9BBFB700EB1F48 /* GameboardL7.m */,
+				D4D340B51A9BBFB700EB1F48 /* GameboardL8.h */,
+				D4D340B61A9BBFB700EB1F48 /* GameboardL8.m */,
+				D4D340B71A9BBFB700EB1F48 /* GameboardL9.h */,
+				D4D340B81A9BBFB700EB1F48 /* GameboardL9.m */,
+				D4D340B91A9BBFB700EB1F48 /* GameboardL10.h */,
+				D4D340BA1A9BBFB700EB1F48 /* GameboardL10.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -410,18 +455,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D340C31A9BBFB700EB1F48 /* GameboardL10.m in Sources */,
+				D4D340BB1A9BBFB700EB1F48 /* GameboardL2.m in Sources */,
 				D46E7B951A97DFA6000418AA /* AppDelegate.m in Sources */,
+				D4D340C01A9BBFB700EB1F48 /* GameboardL7.m in Sources */,
 				D46E7BE31A97E03E000418AA /* MyLabelCell.m in Sources */,
 				D46E7BAB1A97DFFC000418AA /* Gameboard.m in Sources */,
 				D46E7B701A97DF65000418AA /* main.m in Sources */,
 				D46E7BA41A97DFE9000418AA /* HowToViewController.m in Sources */,
+				D4D340C21A9BBFB700EB1F48 /* GameboardL9.m in Sources */,
 				D46E7BE51A97E03E000418AA /* CellPair.m in Sources */,
 				D46E7BE41A97E03E000418AA /* MyBannerCell.m in Sources */,
 				D46E7BA51A97DFE9000418AA /* HowToChildViewController.m in Sources */,
+				D4D340BE1A9BBFB700EB1F48 /* GameboardL5.m in Sources */,
 				D46E7BE11A97E03E000418AA /* MyCollectionViewCell.m in Sources */,
+				D4D340BD1A9BBFB700EB1F48 /* GameboardL4.m in Sources */,
 				D46E7B9E1A97DFD3000418AA /* MyCollectionViewLayout.m in Sources */,
 				D46E7BE21A97E03E000418AA /* MyButtonCell.m in Sources */,
 				D46E7B9D1A97DFD3000418AA /* MyCollectionViewController.m in Sources */,
+				D4D340BC1A9BBFB700EB1F48 /* GameboardL3.m in Sources */,
+				D4D340BF1A9BBFB700EB1F48 /* GameboardL6.m in Sources */,
+				D4D340C11A9BBFB700EB1F48 /* GameboardL8.m in Sources */,
 				D46E7BAC1A97DFFC000418AA /* GameboardL1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
