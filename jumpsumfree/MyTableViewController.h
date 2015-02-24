@@ -1,17 +1,17 @@
 //
-//  MyMenuViewController.h
+//  MyTableViewController.h
 //  jumpsumfree
 //
 //  Created by Tyler Cap on 2/23/15.
 //  Copyright (c) 2015 Tyler Cap. All rights reserved.
 //
-@import GoogleMobileAds;
 
 #import <UIKit/UIKit.h>
+#import "MyTableViewCell.h"
 #import "MyCollectionViewController.h"
 
-@interface MyMenuViewController : UIViewController
+@interface MyTableViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet GADBannerView *bannerAd;
+@property (nonatomic, strong) NSArray *levels;
 
 @end

@@ -27,6 +27,8 @@
 		D404456B1A97E43900B1FE00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D404456A1A97E43900B1FE00 /* SystemConfiguration.framework */; };
 		D404456D1A97E44600B1FE00 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D404456C1A97E44600B1FE00 /* libc++.dylib */; };
 		D404456F1A97E44B00B1FE00 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D404456E1A97E44B00B1FE00 /* libz.dylib */; };
+		D40705D11A9BDDDF0087C3EA /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D40705D01A9BDDDF0087C3EA /* MyTableViewController.m */; };
+		D40705D61A9BEA570087C3EA /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D40705D51A9BEA570087C3EA /* MyTableViewCell.m */; };
 		D46E7B701A97DF65000418AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D46E7B6F1A97DF65000418AA /* main.m */; };
 		D46E7B8A1A97DF65000418AA /* jumpsumfreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D46E7B891A97DF65000418AA /* jumpsumfreeTests.m */; };
 		D46E7B951A97DFA6000418AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D46E7B941A97DFA6000418AA /* AppDelegate.m */; };
@@ -56,7 +58,6 @@
 		D4D340C11A9BBFB700EB1F48 /* GameboardL8.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340B61A9BBFB700EB1F48 /* GameboardL8.m */; };
 		D4D340C21A9BBFB700EB1F48 /* GameboardL9.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340B81A9BBFB700EB1F48 /* GameboardL9.m */; };
 		D4D340C31A9BBFB700EB1F48 /* GameboardL10.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340BA1A9BBFB700EB1F48 /* GameboardL10.m */; };
-		D4D340C61A9BC2E000EB1F48 /* MyMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340C51A9BC2E000EB1F48 /* MyMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,10 @@
 		D404456A1A97E43900B1FE00 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D404456C1A97E44600B1FE00 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		D404456E1A97E44B00B1FE00 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D40705CF1A9BDDDF0087C3EA /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		D40705D01A9BDDDF0087C3EA /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		D40705D21A9BDF620087C3EA /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		D40705D51A9BEA570087C3EA /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
 		D46E7B6A1A97DF65000418AA /* jumpsumfree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jumpsumfree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46E7B6E1A97DF65000418AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D46E7B6F1A97DF65000418AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -144,8 +149,6 @@
 		D4D340B81A9BBFB700EB1F48 /* GameboardL9.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL9.m; sourceTree = "<group>"; };
 		D4D340B91A9BBFB700EB1F48 /* GameboardL10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL10.h; sourceTree = "<group>"; };
 		D4D340BA1A9BBFB700EB1F48 /* GameboardL10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL10.m; sourceTree = "<group>"; };
-		D4D340C41A9BC2E000EB1F48 /* MyMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMenuViewController.h; sourceTree = "<group>"; };
-		D4D340C51A9BC2E000EB1F48 /* MyMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,8 +278,10 @@
 			isa = PBXGroup;
 			children = (
 				D46E7B971A97DFD3000418AA /* JumpSum.storyboard */,
-				D4D340C41A9BC2E000EB1F48 /* MyMenuViewController.h */,
-				D4D340C51A9BC2E000EB1F48 /* MyMenuViewController.m */,
+				D40705CF1A9BDDDF0087C3EA /* MyTableViewController.h */,
+				D40705D01A9BDDDF0087C3EA /* MyTableViewController.m */,
+				D40705D21A9BDF620087C3EA /* MyTableViewCell.h */,
+				D40705D51A9BEA570087C3EA /* MyTableViewCell.m */,
 				D46E7B981A97DFD3000418AA /* MyCollectionViewController.h */,
 				D46E7B991A97DFD3000418AA /* MyCollectionViewController.m */,
 				D46E7B9A1A97DFD3000418AA /* MyCollectionViewLayout.h */,
@@ -476,12 +481,13 @@
 				D46E7BE11A97E03E000418AA /* MyCollectionViewCell.m in Sources */,
 				D4D340BD1A9BBFB700EB1F48 /* GameboardL4.m in Sources */,
 				D46E7B9E1A97DFD3000418AA /* MyCollectionViewLayout.m in Sources */,
+				D40705D11A9BDDDF0087C3EA /* MyTableViewController.m in Sources */,
 				D46E7BE21A97E03E000418AA /* MyButtonCell.m in Sources */,
 				D46E7B9D1A97DFD3000418AA /* MyCollectionViewController.m in Sources */,
 				D4D340BC1A9BBFB700EB1F48 /* GameboardL3.m in Sources */,
 				D4D340BF1A9BBFB700EB1F48 /* GameboardL6.m in Sources */,
+				D40705D61A9BEA570087C3EA /* MyTableViewCell.m in Sources */,
 				D4D340C11A9BBFB700EB1F48 /* GameboardL8.m in Sources */,
-				D4D340C61A9BC2E000EB1F48 /* MyMenuViewController.m in Sources */,
 				D46E7BAC1A97DFFC000418AA /* GameboardL1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

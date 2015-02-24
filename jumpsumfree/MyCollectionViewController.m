@@ -67,7 +67,13 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    [super viewDidLoad];    
+    
+    NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                               [UIColor colorWithRed:0.05 green:0.478 blue:1.0 alpha:1.0],
+                                               NSForegroundColorAttributeName,
+                                               nil];
+    [self.navigationController.navigationBar setTitleTextAttributes:navbarTitleTextAttributes];
     
     _headerSections = 2;
     _footerSections = 1;
@@ -84,6 +90,46 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
     }
     
     [self loadInterstitial];
+
+    /*
+    NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                               [UIColor colorWithRed:0.0 green:0.0 blue:0.6 alpha:1.0],
+                                               NSForegroundColorAttributeName,
+                                               nil];
+    [self.navigationController.navigationBar setTitleTextAttributes:navbarTitleTextAttributes];
+    */
+    
+    switch( _level ){
+        case 2:
+            self.navigationItem.title = @"Jump Sum Level 2";
+            break;
+        case 3:
+            self.navigationItem.title = @"Jump Sum Level 3";
+            break;
+        case 4:
+            self.navigationItem.title = @"Jump Sum Level 4";
+            break;
+        case 5:
+            self.navigationItem.title = @"Jump Sum Level 5";
+            break;
+        case 6:
+            self.navigationItem.title = @"Jump Sum Level 6";
+            break;
+        case 7:
+            self.navigationItem.title = @"Jump Sum Level 7";
+            break;
+        case 8:
+            self.navigationItem.title = @"Jump Sum Level 8";
+            break;
+        case 9:
+            self.navigationItem.title = @"Jump Sum Level 9";
+            break;
+        case 10:
+            self.navigationItem.title = @"Jump Sum Level 10";
+            break;
+        default:
+            self.navigationItem.title = @"Jump Sum Level 1";
+    }
 }
 
 - (void)loadInterstitial
