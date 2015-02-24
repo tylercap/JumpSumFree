@@ -39,11 +39,11 @@ static NSString * const HSSandbox = @"HighScoreL2.txt";
     
     int remaining = 35;
     NSMutableArray* array = [[NSMutableArray alloc] init];
-    for( int i=0; i<7; i++ ){
+    for( int i=0; i<[self getSections]; i++ ){
         NSMutableArray* row = [[NSMutableArray alloc] init];
         [array addObject:row];
         
-        for( int j=0; j<6; j++ ){
+        for( int j=0; j<[self getItems]; j++ ){
             if( (i % 2 == 0 && j == 5) ||
                 (i % 2 == 1 && j == 0) )
             {

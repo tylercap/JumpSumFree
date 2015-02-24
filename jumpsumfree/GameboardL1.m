@@ -39,11 +39,11 @@ static NSString * const HSSandbox = @"HighScoreL1.txt";
     
     int remaining = 35;
     NSMutableArray* array = [[NSMutableArray alloc] init];
-    for( int i=0; i<7; i++ ){
+    for( int i=0; i<[self getSections]; i++ ){
         NSMutableArray* row = [[NSMutableArray alloc] init];
         [array addObject:row];
         
-        for( int j=0; j<5; j++ ){
+        for( int j=0; j<[self getItems]; j++ ){
             NSUInteger index = arc4random_uniform(remaining);
             [row addObject:[values objectAtIndex:index]];
             

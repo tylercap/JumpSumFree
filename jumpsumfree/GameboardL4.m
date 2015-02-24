@@ -20,35 +20,46 @@ static NSString * const HSSandbox = @"HighScoreL4.txt";
 
 -(NSInteger)getItems
 {
-    return 5;
+    return 6;
 }
 
 -(void)loadNewGame
 {
     NSMutableArray *values= [[NSMutableArray alloc]init];
-    // randomly fill an array with 10 1, 2, and 3s; 4 10s; and 1 -1 for our values
+    // randomly fill an array with 9 1's, 9 2's, 9 3's, 2 7's, and 4 8's for our values
     for( int i=1; i<4; i++ ){
-        for( int j=0; j<10; j++ ){
+        for( int j=0; j<9; j++ ){
             [values addObject:[NSString stringWithFormat:@"%d",i]];
         }
     }
     [values addObject:@"-1"];
+    for( int j=0; j<2; j++ ){
+        [values addObject:@"7"];
+    }
     for( int j=0; j<4; j++ ){
-        [values addObject:@"10"];
+        [values addObject:@"8"];
     }
     
-    int remaining = 35;
+    int remaining = 34;
     NSMutableArray* array = [[NSMutableArray alloc] init];
-    for( int i=0; i<7; i++ ){
+    for( int i=0; i<[self getSections]; i++ ){
         NSMutableArray* row = [[NSMutableArray alloc] init];
         [array addObject:row];
         
-        for( int j=0; j<5; j++ ){
-            NSUInteger index = arc4random_uniform(remaining);
-            [row addObject:[values objectAtIndex:index]];
-            
-            [values removeObjectAtIndex:index];
-            remaining--;
+        for( int j=0; j<[self getItems]; j++ ){
+            if( ((j == 0 || j == 5) && i > 1 && i < 5) ||
+                ((j == 1 || j == 4) && i == 3) )
+            {
+                [row addObject:@"-2"];
+            }
+            else
+            {
+                NSUInteger index = arc4random_uniform(remaining);
+                [row addObject:[values objectAtIndex:index]];
+                
+                [values removeObjectAtIndex:index];
+                remaining--;
+            }
         }
     }
     

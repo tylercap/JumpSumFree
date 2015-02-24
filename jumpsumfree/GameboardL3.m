@@ -20,30 +20,31 @@ static NSString * const HSSandbox = @"HighScoreL3.txt";
 
 -(NSInteger)getItems
 {
-    return 5;
+    return 6;
 }
 
 -(void)loadNewGame
 {
     NSMutableArray *values= [[NSMutableArray alloc]init];
-    // randomly fill an array with 10 1, 2, and 3s; 4 10s; and 1 -1 for our values
+    // randomly fill an array with 12 1, 2, and 3s; 4 5s; 1 8; and 1 -1 for our values
     for( int i=1; i<4; i++ ){
-        for( int j=0; j<10; j++ ){
+        for( int j=0; j<12; j++ ){
             [values addObject:[NSString stringWithFormat:@"%d",i]];
         }
     }
     [values addObject:@"-1"];
+    [values addObject:@"8"];
     for( int j=0; j<4; j++ ){
-        [values addObject:@"10"];
+        [values addObject:@"5"];
     }
     
-    int remaining = 35;
+    int remaining = 42;
     NSMutableArray* array = [[NSMutableArray alloc] init];
-    for( int i=0; i<7; i++ ){
+    for( int i=0; i<[self getSections]; i++ ){
         NSMutableArray* row = [[NSMutableArray alloc] init];
         [array addObject:row];
         
-        for( int j=0; j<5; j++ ){
+        for( int j=0; j<[self getItems]; j++ ){
             NSUInteger index = arc4random_uniform(remaining);
             [row addObject:[values objectAtIndex:index]];
             

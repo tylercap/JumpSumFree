@@ -20,35 +20,76 @@ static NSString * const HSSandbox = @"HighScoreL10.txt";
 
 -(NSInteger)getItems
 {
-    return 5;
+    return 7;
 }
 
 -(void)loadNewGame
 {
     NSMutableArray *values= [[NSMutableArray alloc]init];
-    // randomly fill an array with 10 1, 2, and 3s; 4 10s; and 1 -1 for our values
+    // randomly fill an array with 12 1's, 12 2's, 12 3's, and 4 7's for our values
     for( int i=1; i<4; i++ ){
-        for( int j=0; j<10; j++ ){
+        for( int j=0; j<12; j++ ){
             [values addObject:[NSString stringWithFormat:@"%d",i]];
         }
     }
     [values addObject:@"-1"];
     for( int j=0; j<4; j++ ){
-        [values addObject:@"10"];
+        [values addObject:@"7"];
     }
     
-    int remaining = 35;
+    int remaining = 41;
     NSMutableArray* array = [[NSMutableArray alloc] init];
-    for( int i=0; i<7; i++ ){
+    for( int i=0; i<[self getSections]; i++ ){
         NSMutableArray* row = [[NSMutableArray alloc] init];
         [array addObject:row];
         
-        for( int j=0; j<5; j++ ){
-            NSUInteger index = arc4random_uniform(remaining);
-            [row addObject:[values objectAtIndex:index]];
-            
-            [values removeObjectAtIndex:index];
-            remaining--;
+        for( int j=0; j<[self getItems]; j++ ){
+            if( ((j < 2 || j > 4) && (i == 3)) ||
+                ((i < 2 || i > 4) && (j == 3)) )
+            {
+                [row addObject:@"-2"];
+            }
+            else{
+                NSUInteger index = arc4random_uniform(remaining);
+                NSString *value = [values objectAtIndex:index];
+                
+                if( [value isEqualToString:@"-1"] ){
+                    Boolean ok_space = NO;
+                    if( i == 0 && ( j == 0 || j == 6 ) ){
+                        ok_space = YES;
+                    }
+                    else if( i == 2 && ( j == 0 || j == 6 || j == 2 || j == 4 ) ){
+                        ok_space = YES;
+                    }
+                    else if( i == 4 && ( j == 0 || j == 6 || j == 2 || j == 4 ) ){
+                        ok_space = YES;
+                    }
+                    else if( i == 6 && ( j == 0 || j == 6 ) ){
+                        ok_space = YES;
+                    }
+                    
+                    if( ok_space == NO ){
+                        // get a new value for this tile and put the -1 back into the list
+                        while( [value isEqualToString:@"-1"] ){
+                            index = arc4random_uniform(remaining);
+                            value = [values objectAtIndex:index];
+                        }
+                        
+                        [row addObject:value];
+                        [values removeObjectAtIndex:index];
+                    }
+                    else{
+                        [row addObject:value];
+                        [values removeObjectAtIndex:index];
+                    }
+                }
+                else{
+                    [row addObject:value];
+                    [values removeObjectAtIndex:index];
+                }
+                
+                remaining--;
+            }
         }
     }
     
