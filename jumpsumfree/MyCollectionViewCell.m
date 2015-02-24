@@ -10,17 +10,6 @@
 
 @implementation MyCollectionViewCell
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    
-    if (self) {
-        //self.backgroundColor = [UIColor colorWithRed:1.0 green:0.5 blue:0.0 alpha:1.0];
-    }
-    
-    return self;
-}
-
 - (void)setLabel:(NSInteger)value
           parent:(UIViewController *)parent
 {
@@ -41,8 +30,8 @@
     }
     
     self.backgroundColor = [UIColor colorWithRed:1.0 green:0.5 blue:0.0 alpha:1.0];
-    self.layer.borderColor = [UIColor colorWithRed:0.0 green:0.0 blue:1.0 alpha:1.0].CGColor;
-    self.layer.borderWidth = 1.0;
+    self.layer.borderColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.44 alpha:1.0].CGColor;
+    self.layer.borderWidth = 1.2;
     self.layer.cornerRadius = 6.0f;
     self.layer.masksToBounds = YES;
 }

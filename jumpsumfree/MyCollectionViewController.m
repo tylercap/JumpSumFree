@@ -638,7 +638,7 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
                                           forIndexPath:indexPath];
                 
                 [labelCell setLabel:CurrentScore
-                          textColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.7 alpha:1.0]];
+                          textColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.44 alpha:1.0]];
                 
                 cell = labelCell;
                 self.currentScoreLabel = labelCell;
@@ -698,7 +698,7 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
                                           forIndexPath:indexPath];
                 
                 [labelCell setLabel:HighScore
-                          textColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.7 alpha:1.0]];
+                          textColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.44 alpha:1.0]];
                 
                 cell = labelCell;
                 self.highScoreLabel = labelCell;
