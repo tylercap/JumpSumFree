@@ -92,27 +92,27 @@ static NSString * const HSSandbox = @"HighScoreL8.txt";
 
 - (NSString *)getLeaderboardId
 {
-    return @"CgkItMu16qgJEAIQAQ";
+    return @"CgkItMu16qgJEAIQLg";
 }
 
 - (NSString *)getOver60Id
 {
-    return @"CgkItMu16qgJEAIQBA";
+    return @"CgkItMu16qgJEAIQMQ";
 }
 
 - (NSString *)getOver80Id
 {
-    return @"CgkItMu16qgJEAIQAw";
+    return @"CgkItMu16qgJEAIQMg";
 }
 
 - (NSString *)getOver90Id
 {
-    return @"CgkItMu16qgJEAIQAg";
+    return @"CgkItMu16qgJEAIQMw";
 }
 
 - (NSString *)getPerfectId
 {
-    return @"CgkItMu16qgJEAIQBg";
+    return @"CgkItMu16qgJEAIQOg";
 }
 
 @end
