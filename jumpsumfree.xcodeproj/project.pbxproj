@@ -49,6 +49,7 @@
 		D46E7BEE1A97E055000418AA /* example3.png in Resources */ = {isa = PBXBuildFile; fileRef = D46E7BE91A97E055000418AA /* example3.png */; };
 		D46E7BEF1A97E055000418AA /* example4.png in Resources */ = {isa = PBXBuildFile; fileRef = D46E7BEA1A97E055000418AA /* example4.png */; };
 		D47826311A99136D009CD98B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47826301A99136D009CD98B /* Images.xcassets */; };
+		D4B62B1B1AA5154400951839 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B62B1A1AA5154400951839 /* FacebookSDK.framework */; };
 		D4D340BB1A9BBFB700EB1F48 /* GameboardL2.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340AA1A9BBFB700EB1F48 /* GameboardL2.m */; };
 		D4D340BC1A9BBFB700EB1F48 /* GameboardL3.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340AC1A9BBFB700EB1F48 /* GameboardL3.m */; };
 		D4D340BD1A9BBFB700EB1F48 /* GameboardL4.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340AE1A9BBFB700EB1F48 /* GameboardL4.m */; };
@@ -131,6 +132,7 @@
 		D46E7BE91A97E055000418AA /* example3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example3.png; sourceTree = "<group>"; };
 		D46E7BEA1A97E055000418AA /* example4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example4.png; sourceTree = "<group>"; };
 		D47826301A99136D009CD98B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4B62B1A1AA5154400951839 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		D4D340A91A9BBFB700EB1F48 /* GameboardL2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL2.h; sourceTree = "<group>"; };
 		D4D340AA1A9BBFB700EB1F48 /* GameboardL2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL2.m; sourceTree = "<group>"; };
 		D4D340AB1A9BBFB700EB1F48 /* GameboardL3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL3.h; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D404456F1A97E44B00B1FE00 /* libz.dylib in Frameworks */,
+				D4B62B1B1AA5154400951839 /* FacebookSDK.framework in Frameworks */,
 				D404456D1A97E44600B1FE00 /* libc++.dylib in Frameworks */,
 				D404456B1A97E43900B1FE00 /* SystemConfiguration.framework in Frameworks */,
 				D40445691A97E43000B1FE00 /* Security.framework in Frameworks */,
@@ -190,6 +193,7 @@
 		D40445491A97E39D00B1FE00 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				D4B62B1A1AA5154400951839 /* FacebookSDK.framework */,
 				D404456E1A97E44B00B1FE00 /* libz.dylib */,
 				D404456C1A97E44600B1FE00 /* libc++.dylib */,
 				D404456A1A97E43900B1FE00 /* SystemConfiguration.framework */,

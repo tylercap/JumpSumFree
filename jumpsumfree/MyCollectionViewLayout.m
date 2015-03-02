@@ -159,8 +159,8 @@ static NSString * const BannerIdentifier = @"BannerCell";
 {
     NSInteger rowCount = [self.collectionView numberOfSections];
     CGFloat height = self.itemInsets.top + self.itemInsets.bottom +
-                    rowCount * self.itemSize.height + (rowCount - 2) * self.interItemSpacingY;
-    height += 50 + self.interItemSpacingY * 3;
+                    (rowCount - 1) * (self.itemSize.height + self.interItemSpacingY);
+    height += 50 + self.interItemSpacingY;
     
     NSInteger colCount = [self.collectionView numberOfItemsInSection:3];
     CGFloat width = self.itemInsets.left + self.itemInsets.right +
