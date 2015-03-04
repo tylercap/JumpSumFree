@@ -25,6 +25,7 @@
 #import "GameboardL9.h"
 #import "GameboardL10.h"
 #import <GooglePlayGames/GooglePlayGames.h>
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface MyCollectionViewController : UICollectionViewController
 <UICollectionViewDataSource, GADInterstitialDelegate, GPGStatusDelegate>
@@ -33,6 +34,7 @@
 @property (strong, nonatomic) Gameboard *gameboard;
 @property (strong, nonatomic) NSMutableArray *tiles;
 @property (nonatomic) NSInteger level;
+@property (nonatomic) NSInteger currentScore;
 @property (strong, atomic) UICollectionViewCell* movingCell;
 
 @property (strong, nonatomic) GADInterstitial *interstitial;

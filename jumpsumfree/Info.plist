@@ -28,11 +28,16 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>com.gmail.tylercap4.jumpsumfree</string>
+				<string>fb768647469893426</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>2</string>
+	<key>FacebookAppID</key>
+	<string>768647469893426</string>
+	<key>FacebookDisplayName</key>
+	<string>Jump Sum Free</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIMainStoryboardFile</key>
