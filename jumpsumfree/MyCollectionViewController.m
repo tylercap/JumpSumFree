@@ -727,7 +727,8 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
     // If the Facebook app is installed and we can present the share dialog
     if ([FBDialogs canPresentShareDialogWithParams:params]) {
         // Present the share dialog
-        [FBDialogs presentShareDialogWithLink:params.link
+        [FBDialogs presentShareDialogWithParams:params
+                                    clientState:nil
                                       handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
                                           if(error) {
                                               // An error occurred, we need to handle the error

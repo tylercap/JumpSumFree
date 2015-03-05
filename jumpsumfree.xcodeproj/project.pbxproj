@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D40445481A97E36800B1FE00 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40445471A97E36800B1FE00 /* GoogleMobileAds.framework */; };
-		D404454D1A97E3C400B1FE00 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D404454A1A97E3C400B1FE00 /* GoogleOpenSource.framework */; };
-		D404454E1A97E3C400B1FE00 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D404454B1A97E3C400B1FE00 /* GooglePlus.framework */; };
-		D404454F1A97E3C400B1FE00 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D404454C1A97E3C400B1FE00 /* GooglePlus.bundle */; };
-		D40445521A97E3CE00B1FE00 /* GooglePlayGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40445501A97E3CE00B1FE00 /* GooglePlayGames.framework */; };
-		D40445531A97E3CE00B1FE00 /* GooglePlayGames.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D40445511A97E3CE00B1FE00 /* GooglePlayGames.bundle */; };
 		D40445551A97E3F400B1FE00 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40445541A97E3F400B1FE00 /* AddressBook.framework */; };
 		D40445571A97E3F900B1FE00 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40445561A97E3F900B1FE00 /* AssetsLibrary.framework */; };
 		D40445591A97E3FF00B1FE00 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40445581A97E3FF00B1FE00 /* CoreData.framework */; };
@@ -49,7 +43,13 @@
 		D46E7BEE1A97E055000418AA /* example3.png in Resources */ = {isa = PBXBuildFile; fileRef = D46E7BE91A97E055000418AA /* example3.png */; };
 		D46E7BEF1A97E055000418AA /* example4.png in Resources */ = {isa = PBXBuildFile; fileRef = D46E7BEA1A97E055000418AA /* example4.png */; };
 		D47826311A99136D009CD98B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47826301A99136D009CD98B /* Images.xcassets */; };
-		D4B62B1B1AA5154400951839 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B62B1A1AA5154400951839 /* FacebookSDK.framework */; };
+		D4B4DBDD1AA78DA1009471CB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B4DBD61AA78DA1009471CB /* FacebookSDK.framework */; };
+		D4B4DBDE1AA78DA1009471CB /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B4DBD71AA78DA1009471CB /* GoogleMobileAds.framework */; };
+		D4B4DBDF1AA78DA1009471CB /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B4DBD81AA78DA1009471CB /* GoogleOpenSource.framework */; };
+		D4B4DBE01AA78DA1009471CB /* GooglePlayGames.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4B4DBD91AA78DA1009471CB /* GooglePlayGames.bundle */; };
+		D4B4DBE11AA78DA1009471CB /* GooglePlayGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B4DBDA1AA78DA1009471CB /* GooglePlayGames.framework */; };
+		D4B4DBE21AA78DA1009471CB /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4B4DBDB1AA78DA1009471CB /* GooglePlus.bundle */; };
+		D4B4DBE31AA78DA1009471CB /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B4DBDC1AA78DA1009471CB /* GooglePlus.framework */; };
 		D4D340BB1A9BBFB700EB1F48 /* GameboardL2.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340AA1A9BBFB700EB1F48 /* GameboardL2.m */; };
 		D4D340BC1A9BBFB700EB1F48 /* GameboardL3.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340AC1A9BBFB700EB1F48 /* GameboardL3.m */; };
 		D4D340BD1A9BBFB700EB1F48 /* GameboardL4.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340AE1A9BBFB700EB1F48 /* GameboardL4.m */; };
@@ -72,12 +72,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D40445471A97E36800B1FE00 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		D404454A1A97E3C400B1FE00 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
-		D404454B1A97E3C400B1FE00 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
-		D404454C1A97E3C400B1FE00 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
-		D40445501A97E3CE00B1FE00 /* GooglePlayGames.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlayGames.framework; sourceTree = "<group>"; };
-		D40445511A97E3CE00B1FE00 /* GooglePlayGames.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlayGames.bundle; sourceTree = "<group>"; };
 		D40445541A97E3F400B1FE00 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		D40445561A97E3F900B1FE00 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		D40445581A97E3FF00B1FE00 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -132,7 +126,13 @@
 		D46E7BE91A97E055000418AA /* example3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example3.png; sourceTree = "<group>"; };
 		D46E7BEA1A97E055000418AA /* example4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example4.png; sourceTree = "<group>"; };
 		D47826301A99136D009CD98B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D4B62B1A1AA5154400951839 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		D4B4DBD61AA78DA1009471CB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../Libs/jsfree/FacebookSDK.framework; sourceTree = "<group>"; };
+		D4B4DBD71AA78DA1009471CB /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = ../Libs/jsfree/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		D4B4DBD81AA78DA1009471CB /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = ../Libs/jsfree/GoogleOpenSource.framework; sourceTree = "<group>"; };
+		D4B4DBD91AA78DA1009471CB /* GooglePlayGames.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlayGames.bundle; path = ../Libs/jsfree/GooglePlayGames.bundle; sourceTree = "<group>"; };
+		D4B4DBDA1AA78DA1009471CB /* GooglePlayGames.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlayGames.framework; path = ../Libs/jsfree/GooglePlayGames.framework; sourceTree = "<group>"; };
+		D4B4DBDB1AA78DA1009471CB /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = ../Libs/jsfree/GooglePlus.bundle; sourceTree = "<group>"; };
+		D4B4DBDC1AA78DA1009471CB /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = ../Libs/jsfree/GooglePlus.framework; sourceTree = "<group>"; };
 		D4D340A91A9BBFB700EB1F48 /* GameboardL2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL2.h; sourceTree = "<group>"; };
 		D4D340AA1A9BBFB700EB1F48 /* GameboardL2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL2.m; sourceTree = "<group>"; };
 		D4D340AB1A9BBFB700EB1F48 /* GameboardL3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL3.h; sourceTree = "<group>"; };
@@ -159,8 +159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D404456F1A97E44B00B1FE00 /* libz.dylib in Frameworks */,
-				D4B62B1B1AA5154400951839 /* FacebookSDK.framework in Frameworks */,
 				D404456D1A97E44600B1FE00 /* libc++.dylib in Frameworks */,
+				D4B4DBDE1AA78DA1009471CB /* GoogleMobileAds.framework in Frameworks */,
 				D404456B1A97E43900B1FE00 /* SystemConfiguration.framework in Frameworks */,
 				D40445691A97E43000B1FE00 /* Security.framework in Frameworks */,
 				D40445671A97E42900B1FE00 /* QuartzCore.framework in Frameworks */,
@@ -170,13 +170,13 @@
 				D40445611A97E41600B1FE00 /* CoreText.framework in Frameworks */,
 				D404455D1A97E40E00B1FE00 /* CoreMotion.framework in Frameworks */,
 				D404455B1A97E40700B1FE00 /* CoreLocation.framework in Frameworks */,
+				D4B4DBDD1AA78DA1009471CB /* FacebookSDK.framework in Frameworks */,
+				D4B4DBDF1AA78DA1009471CB /* GoogleOpenSource.framework in Frameworks */,
 				D40445591A97E3FF00B1FE00 /* CoreData.framework in Frameworks */,
+				D4B4DBE31AA78DA1009471CB /* GooglePlus.framework in Frameworks */,
+				D4B4DBE11AA78DA1009471CB /* GooglePlayGames.framework in Frameworks */,
 				D40445571A97E3F900B1FE00 /* AssetsLibrary.framework in Frameworks */,
 				D40445551A97E3F400B1FE00 /* AddressBook.framework in Frameworks */,
-				D404454D1A97E3C400B1FE00 /* GoogleOpenSource.framework in Frameworks */,
-				D40445521A97E3CE00B1FE00 /* GooglePlayGames.framework in Frameworks */,
-				D404454E1A97E3C400B1FE00 /* GooglePlus.framework in Frameworks */,
-				D40445481A97E36800B1FE00 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +193,13 @@
 		D40445491A97E39D00B1FE00 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				D4B62B1A1AA5154400951839 /* FacebookSDK.framework */,
+				D4B4DBD61AA78DA1009471CB /* FacebookSDK.framework */,
+				D4B4DBD71AA78DA1009471CB /* GoogleMobileAds.framework */,
+				D4B4DBD81AA78DA1009471CB /* GoogleOpenSource.framework */,
+				D4B4DBD91AA78DA1009471CB /* GooglePlayGames.bundle */,
+				D4B4DBDA1AA78DA1009471CB /* GooglePlayGames.framework */,
+				D4B4DBDB1AA78DA1009471CB /* GooglePlus.bundle */,
+				D4B4DBDC1AA78DA1009471CB /* GooglePlus.framework */,
 				D404456E1A97E44B00B1FE00 /* libz.dylib */,
 				D404456C1A97E44600B1FE00 /* libc++.dylib */,
 				D404456A1A97E43900B1FE00 /* SystemConfiguration.framework */,
@@ -208,12 +214,6 @@
 				D40445581A97E3FF00B1FE00 /* CoreData.framework */,
 				D40445561A97E3F900B1FE00 /* AssetsLibrary.framework */,
 				D40445541A97E3F400B1FE00 /* AddressBook.framework */,
-				D40445501A97E3CE00B1FE00 /* GooglePlayGames.framework */,
-				D40445511A97E3CE00B1FE00 /* GooglePlayGames.bundle */,
-				D404454A1A97E3C400B1FE00 /* GoogleOpenSource.framework */,
-				D404454B1A97E3C400B1FE00 /* GooglePlus.framework */,
-				D404454C1A97E3C400B1FE00 /* GooglePlus.bundle */,
-				D40445471A97E36800B1FE00 /* GoogleMobileAds.framework */,
 			);
 			name = libs;
 			sourceTree = "<group>";
@@ -446,9 +446,9 @@
 			files = (
 				D47826311A99136D009CD98B /* Images.xcassets in Resources */,
 				D46E7BEE1A97E055000418AA /* example3.png in Resources */,
-				D404454F1A97E3C400B1FE00 /* GooglePlus.bundle in Resources */,
-				D40445531A97E3CE00B1FE00 /* GooglePlayGames.bundle in Resources */,
+				D4B4DBE21AA78DA1009471CB /* GooglePlus.bundle in Resources */,
 				D46E7B9C1A97DFD3000418AA /* JumpSum.storyboard in Resources */,
+				D4B4DBE01AA78DA1009471CB /* GooglePlayGames.bundle in Resources */,
 				D46E7BEC1A97E055000418AA /* example1.png in Resources */,
 				D46E7BED1A97E055000418AA /* example2.png in Resources */,
 				D46E7BEF1A97E055000418AA /* example4.png in Resources */,
@@ -601,6 +601,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/tcap/Documents/iOSProjects/Libs/jsfree,
 				);
 				INFOPLIST_FILE = jumpsumfree/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -627,6 +628,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/tcap/Documents/iOSProjects/Libs/jsfree,
 				);
 				INFOPLIST_FILE = jumpsumfree/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
