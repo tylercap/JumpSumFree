@@ -725,24 +725,24 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
     //params.linkDescription = [NSString stringWithFormat:@"I scored %ld on Jump Sum Level %ld",(long)_currentScore, (long)_level];
     
     // If the Facebook app is installed and we can present the share dialog
-    if ([FBDialogs canPresentShareDialogWithParams:params]) {
-        // Present the share dialog
-        [FBDialogs presentShareDialogWithParams:params
-                                    clientState:nil
-                                      handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
-                                          if(error) {
-                                              // An error occurred, we need to handle the error
-                                              // See: https://developers.facebook.com/docs/ios/errors
-                                              //NSLog(@"Error publishing story: %@", error.description);
-                                          } else {
-                                              // Success
-                                              //NSLog(@"result %@", results);
-                                          }
-                                      }];
-    } else {
+//    if ([FBDialogs canPresentShareDialogWithParams:params]) {
+//        // Present the share dialog
+//        [FBDialogs presentShareDialogWithParams:params
+//                                    clientState:nil
+//                                      handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
+//                                          if(error) {
+//                                              // An error occurred, we need to handle the error
+//                                              // See: https://developers.facebook.com/docs/ios/errors
+//                                              //NSLog(@"Error publishing story: %@", error.description);
+//                                          } else {
+//                                              // Success
+//                                              //NSLog(@"result %@", results);
+//                                          }
+//                                      }];
+//    } else {
         // Present the feed dialog
         [self postFromFeedDialog];
-    }
+//    }
 }
 
 - (void)postFromFeedDialog
