@@ -275,6 +275,10 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
                 scoreStr = [scoreStr stringByAppendingString:@"\nNew High Score!"];
             }
             
+            if( !_signedIn ){
+                scoreStr = [scoreStr stringByAppendingString:@"\n\nYou must be signed in for your scores to be submitted to the Leaderboard.\nClick the sign in button in the top right corner, and sign in with you Google account."];
+            }
+            
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over"
                                                             message:scoreStr
                                                            delegate:self
@@ -718,10 +722,10 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
 - (void)postToFacebook
 {
     // Check if the Facebook app is installed and we can present the share dialog
-    FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
-    params.link = [NSURL URLWithString:@"https://itunes.apple.com/us/app/jump-sum-free/id969816031?mt=8"];
-    params.name = @"Jump Sum";
-    params.caption = [NSString stringWithFormat:@"I scored %ld on Jump Sum Level %ld",(long)_currentScore, (long)_level];
+//    FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
+//    params.link = [NSURL URLWithString:@"https://itunes.apple.com/us/app/jump-sum-free/id969816031?mt=8"];
+//    params.name = @"Jump Sum";
+//    params.caption = [NSString stringWithFormat:@"I scored %ld on Jump Sum Level %ld",(long)_currentScore, (long)_level];
     //params.linkDescription = [NSString stringWithFormat:@"I scored %ld on Jump Sum Level %ld",(long)_currentScore, (long)_level];
     
     // If the Facebook app is installed and we can present the share dialog
