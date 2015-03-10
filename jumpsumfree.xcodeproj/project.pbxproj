@@ -59,6 +59,8 @@
 		D4D340C11A9BBFB700EB1F48 /* GameboardL8.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340B61A9BBFB700EB1F48 /* GameboardL8.m */; };
 		D4D340C21A9BBFB700EB1F48 /* GameboardL9.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340B81A9BBFB700EB1F48 /* GameboardL9.m */; };
 		D4D340C31A9BBFB700EB1F48 /* GameboardL10.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D340BA1A9BBFB700EB1F48 /* GameboardL10.m */; };
+		D4F126731AAF3E6C00C7FC58 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F126701AAF3E6C00C7FC58 /* Application.m */; };
+		D4F126741AAF3E6C00C7FC58 /* MyWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F126721AAF3E6C00C7FC58 /* MyWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +153,10 @@
 		D4D340B81A9BBFB700EB1F48 /* GameboardL9.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL9.m; sourceTree = "<group>"; };
 		D4D340B91A9BBFB700EB1F48 /* GameboardL10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL10.h; sourceTree = "<group>"; };
 		D4D340BA1A9BBFB700EB1F48 /* GameboardL10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL10.m; sourceTree = "<group>"; };
+		D4F1266F1AAF3E6C00C7FC58 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		D4F126701AAF3E6C00C7FC58 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
+		D4F126711AAF3E6C00C7FC58 /* MyWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWebViewController.h; sourceTree = "<group>"; };
+		D4F126721AAF3E6C00C7FC58 /* MyWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +246,7 @@
 		D46E7B6C1A97DF65000418AA /* jumpsumfree */ = {
 			isa = PBXGroup;
 			children = (
+				D4F1266E1AAF3E5500C7FC58 /* WebView */,
 				D46E7B961A97DFC5000418AA /* View */,
 				D46E7B9F1A97DFD8000418AA /* HowTo */,
 				D46E7BA61A97DFF0000418AA /* Model */,
@@ -363,6 +370,17 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		D4F1266E1AAF3E5500C7FC58 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				D4F1266F1AAF3E6C00C7FC58 /* Application.h */,
+				D4F126701AAF3E6C00C7FC58 /* Application.m */,
+				D4F126711AAF3E6C00C7FC58 /* MyWebViewController.h */,
+				D4F126721AAF3E6C00C7FC58 /* MyWebViewController.m */,
+			);
+			name = WebView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -476,6 +494,7 @@
 				D46E7BE31A97E03E000418AA /* MyLabelCell.m in Sources */,
 				D46E7BAB1A97DFFC000418AA /* Gameboard.m in Sources */,
 				D46E7B701A97DF65000418AA /* main.m in Sources */,
+				D4F126741AAF3E6C00C7FC58 /* MyWebViewController.m in Sources */,
 				D46E7BA41A97DFE9000418AA /* HowToViewController.m in Sources */,
 				D4D340C21A9BBFB700EB1F48 /* GameboardL9.m in Sources */,
 				D46E7BE51A97E03E000418AA /* CellPair.m in Sources */,
@@ -487,6 +506,7 @@
 				D46E7B9E1A97DFD3000418AA /* MyCollectionViewLayout.m in Sources */,
 				D40705D11A9BDDDF0087C3EA /* MyTableViewController.m in Sources */,
 				D46E7BE21A97E03E000418AA /* MyButtonCell.m in Sources */,
+				D4F126731AAF3E6C00C7FC58 /* Application.m in Sources */,
 				D46E7B9D1A97DFD3000418AA /* MyCollectionViewController.m in Sources */,
 				D4D340BC1A9BBFB700EB1F48 /* GameboardL3.m in Sources */,
 				D4D340BF1A9BBFB700EB1F48 /* GameboardL6.m in Sources */,

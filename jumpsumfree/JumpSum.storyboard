@@ -278,5 +278,38 @@
             </objects>
             <point key="canvasLocation" x="788" y="1475"/>
         </scene>
+        <!--My Web View Controller-->
+        <scene sceneID="6t6-7b-Zu6">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N1Q-wS-tS8" customClass="MyWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xjx-Ex-6gB"/>
+                        <viewControllerLayoutGuide type="bottom" id="bNe-kU-S41"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6ed-io-De6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7n6-oR-rAZ">
+                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7n6-oR-rAZ" firstAttribute="leading" secondItem="6ed-io-De6" secondAttribute="leadingMargin" id="7u3-N0-Cdt"/>
+                            <constraint firstItem="7n6-oR-rAZ" firstAttribute="top" secondItem="6ed-io-De6" secondAttribute="topMargin" id="YbJ-8H-ecu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7n6-oR-rAZ" secondAttribute="trailing" id="adH-eR-Lhb"/>
+                            <constraint firstItem="bNe-kU-S41" firstAttribute="top" secondItem="7n6-oR-rAZ" secondAttribute="bottom" id="xYd-7C-76j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="7n6-oR-rAZ" id="Pfa-4K-6h0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Erj-Fm-3Cx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="795"/>
+        </scene>
     </scenes>
 </document>
