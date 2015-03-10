@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSPrincipalClass</key>
-	<string>Application</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -19,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.2</string>
+	<string>3.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -37,13 +35,15 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>3.2</string>
+	<string>3.3</string>
 	<key>FacebookAppID</key>
 	<string>768647469893426</string>
 	<key>FacebookDisplayName</key>
 	<string>Jump Sum Free</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSPrincipalClass</key>
+	<string>Application</string>
 	<key>UIMainStoryboardFile</key>
 	<string>JumpSum</string>
 	<key>UIRequiredDeviceCapabilities</key>
