@@ -12,7 +12,7 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-    if ([[[request URL] absoluteString] hasPrefix:@"com.gmail.tylercap4.jumpsum:/oauth2callback"]) {
+    if ([[[request URL] absoluteString] hasPrefix:@"com.gmail.tylercap4.jumpsumfree:/oauth2callback"]) {
         [GPPURLHandler handleURL:[request URL] sourceApplication:@"com.google.chrome.ios" annotation:nil];
         
         // Looks like we did log in (onhand of the url), we are logged in, the Google APi handles the rest
