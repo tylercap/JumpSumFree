@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <GooglePlus/GooglePlus.h>
 
+
 @interface MyWebViewController : UIViewController <UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+
+-(IBAction)close;
 
 -(void)loadRequest:(NSURL*)request;
 

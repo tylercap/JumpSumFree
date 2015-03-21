@@ -58,6 +58,9 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
         case 10:
             _gameboard = [[GameboardL10 alloc] init];
             break;
+        case 11:
+            _gameboard = [[GameboardL11 alloc] init];
+            break;
         default:
             _gameboard = [[GameboardL1 alloc] init];
     }
@@ -301,7 +304,7 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
                                                             message:scoreStr
                                                            delegate:self
                                                   cancelButtonTitle:@"New Game"
-                                                  otherButtonTitles:@"Post Score To Facebook", nil];
+                                                  otherButtonTitles:@"Post Score To Facebook", @"Download Jump Sum Full", nil];
             [alert show];
         }
     }
@@ -311,6 +314,9 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
 {
     if( buttonIndex == 1 ){
         [self postToFacebook];
+    }
+    else if( buttonIndex == 2 ){
+        [self downloadJS];
     }
     //else if( buttonIndex == 0 ){
         [self newGame];
@@ -341,6 +347,12 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
     [vc setModalPresentationStyle:UIModalPresentationOverFullScreen];
     self.modalPresentationStyle = UIModalPresentationCurrentContext;
     [self presentViewController:vc animated:YES completion:NULL];
+}
+
+- (void)downloadJS
+{
+    NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/us/app/jump-sum/id971266648?mt=8"];
+    [[UIApplication sharedApplication] openURL:url];
 }
 
 - (void)signInOrOut

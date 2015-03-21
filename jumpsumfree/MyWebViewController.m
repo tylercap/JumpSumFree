@@ -30,4 +30,9 @@
     [_webView loadRequest:request];
 }
 
+- (IBAction)close
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

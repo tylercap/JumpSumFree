@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="t6n-oY-BgO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="t6n-oY-BgO">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -291,15 +291,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7n6-oR-rAZ">
-                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="594" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfW-sb-QvD">
+                                <rect key="frame" x="508" y="10" width="66" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="0.0" green="0.0024741522303404085" blue="0.70247708605966852" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close" destination="N1Q-wS-tS8" eventType="touchUpInside" id="Oxx-4a-YJ4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7n6-oR-rAZ" firstAttribute="leading" secondItem="6ed-io-De6" secondAttribute="leadingMargin" id="7u3-N0-Cdt"/>
+                            <constraint firstItem="7n6-oR-rAZ" firstAttribute="leading" secondItem="6ed-io-De6" secondAttribute="leading" id="7u3-N0-Cdt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NfW-sb-QvD" secondAttribute="trailing" constant="10" id="SK5-3B-4WS"/>
                             <constraint firstItem="7n6-oR-rAZ" firstAttribute="top" secondItem="6ed-io-De6" secondAttribute="topMargin" id="YbJ-8H-ecu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7n6-oR-rAZ" secondAttribute="trailing" id="adH-eR-Lhb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7n6-oR-rAZ" secondAttribute="trailing" constant="-10" id="adH-eR-Lhb"/>
+                            <constraint firstItem="NfW-sb-QvD" firstAttribute="top" secondItem="6ed-io-De6" secondAttribute="topMargin" constant="10" id="doc-bT-1TY"/>
                             <constraint firstItem="bNe-kU-S41" firstAttribute="top" secondItem="7n6-oR-rAZ" secondAttribute="bottom" id="xYd-7C-76j"/>
                         </constraints>
                     </view>

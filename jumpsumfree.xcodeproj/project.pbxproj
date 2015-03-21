@@ -43,6 +43,7 @@
 		D46E7BEE1A97E055000418AA /* example3.png in Resources */ = {isa = PBXBuildFile; fileRef = D46E7BE91A97E055000418AA /* example3.png */; };
 		D46E7BEF1A97E055000418AA /* example4.png in Resources */ = {isa = PBXBuildFile; fileRef = D46E7BEA1A97E055000418AA /* example4.png */; };
 		D47826311A99136D009CD98B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47826301A99136D009CD98B /* Images.xcassets */; };
+		D479E6C01ABC819900C83592 /* GameboardL11.m in Sources */ = {isa = PBXBuildFile; fileRef = D479E6BF1ABC819900C83592 /* GameboardL11.m */; };
 		D4B4DBDD1AA78DA1009471CB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B4DBD61AA78DA1009471CB /* FacebookSDK.framework */; };
 		D4B4DBDE1AA78DA1009471CB /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B4DBD71AA78DA1009471CB /* GoogleMobileAds.framework */; };
 		D4B4DBDF1AA78DA1009471CB /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B4DBD81AA78DA1009471CB /* GoogleOpenSource.framework */; };
@@ -128,6 +129,8 @@
 		D46E7BE91A97E055000418AA /* example3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example3.png; sourceTree = "<group>"; };
 		D46E7BEA1A97E055000418AA /* example4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example4.png; sourceTree = "<group>"; };
 		D47826301A99136D009CD98B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D479E6BE1ABC819900C83592 /* GameboardL11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardL11.h; sourceTree = "<group>"; };
+		D479E6BF1ABC819900C83592 /* GameboardL11.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardL11.m; sourceTree = "<group>"; };
 		D4B4DBD61AA78DA1009471CB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../Libs/jsfree/FacebookSDK.framework; sourceTree = "<group>"; };
 		D4B4DBD71AA78DA1009471CB /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = ../Libs/jsfree/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		D4B4DBD81AA78DA1009471CB /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = ../Libs/jsfree/GoogleOpenSource.framework; sourceTree = "<group>"; };
@@ -337,6 +340,8 @@
 				D4D340B81A9BBFB700EB1F48 /* GameboardL9.m */,
 				D4D340B91A9BBFB700EB1F48 /* GameboardL10.h */,
 				D4D340BA1A9BBFB700EB1F48 /* GameboardL10.m */,
+				D479E6BE1ABC819900C83592 /* GameboardL11.h */,
+				D479E6BF1ABC819900C83592 /* GameboardL11.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -504,6 +509,7 @@
 				D46E7BE11A97E03E000418AA /* MyCollectionViewCell.m in Sources */,
 				D4D340BD1A9BBFB700EB1F48 /* GameboardL4.m in Sources */,
 				D46E7B9E1A97DFD3000418AA /* MyCollectionViewLayout.m in Sources */,
+				D479E6C01ABC819900C83592 /* GameboardL11.m in Sources */,
 				D40705D11A9BDDDF0087C3EA /* MyTableViewController.m in Sources */,
 				D46E7BE21A97E03E000418AA /* MyButtonCell.m in Sources */,
 				D4F126731AAF3E6C00C7FC58 /* Application.m in Sources */,
