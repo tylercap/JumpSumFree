@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 Tyler Cap. All rights reserved.
 //
 
-@import GoogleMobileAds;
-
 #import "MyCollectionViewController.h"
 
 static NSString * const CellIdentifier = @"TileCell";
@@ -18,9 +16,11 @@ static NSString * const CurrentScore = @"Current Score: ";
 static NSString * const HighScore = @"High Score: ";
 static NSString * const SignIn = @"Sign In";
 static NSString * const SignOut = @"Sign Out";
-static NSString * const BannerAdId = @"ca-app-pub-8484316959485082/7478851650";
-static NSString * const InterstitialAdId = @"ca-app-pub-8484316959485082/8955584856";
+//static NSString * const BannerAdId = @"ca-app-pub-8484316959485082/7478851650";
+//static NSString * const InterstitialAdId = @"ca-app-pub-8484316959485082/8955584856";
 static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeutg8relg25.apps.googleusercontent.com";
+
+static NSString * const intAdName = @"JS_IOS_INTERSTITIAL";
 
 @implementation MyCollectionViewController
 
@@ -158,16 +158,11 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
 
 - (void)loadInterstitial
 {
-    self.interstitial = [[GADInterstitial alloc] init];
-    self.interstitial.adUnitID = InterstitialAdId;
-    
-    GADRequest *request = [GADRequest request];
-    self.interstitial.delegate = self;
-    [self.interstitial loadRequest:request];
-}
-
-- (void)interstitialDidDismissScreen:(GADInterstitial *)interstitial {
-    [self loadInterstitial];
+    if ([_adInterstitial ready]) {
+        [_adInterstitial presentWithViewController:self];
+    } else {
+        [_adInterstitial fetchAd];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -175,6 +170,16 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
     [super viewDidAppear:animated];
     
     [self updateScore:YES autoLoadNew:YES];
+    
+    // Fetch fullscreen ads early when a later display is likely. For
+    // example, at the beginning of a level.
+    _adInterstitial = [[FlurryAdInterstitial alloc]  initWithSpace:intAdName];
+    _adInterstitial.adDelegate = self;
+    
+    [_adInterstitial fetchAd];
+    
+    if( _bannerAdCell != nil )
+        [_bannerAdCell loadAd:self];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -328,9 +333,7 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
 
 - (void)newGame
 {
-    if ([self.interstitial isReady]) {
-        [self.interstitial presentFromRootViewController:self];
-    }
+    [self loadInterstitial];
     
     [self.gameboard loadNewGame];
     
@@ -613,12 +616,12 @@ static NSString * const GoogleClientId = @"320198239668-quml3u6s5mch28jvq0vpdeut
             MyBannerCell *bannerCell = [collectionView
                                         dequeueReusableCellWithReuseIdentifier:BannerIdentifier
                                         forIndexPath:indexPath];
-            
-            
-            bannerCell.bannerAd.adUnitID = BannerAdId;
-            bannerCell.bannerAd.rootViewController = self;
-            [bannerCell.bannerAd loadRequest:[GADRequest request]];
-            
+        
+            [bannerCell loadAd:self];
+//            bannerCell.bannerAd.adUnitID = BannerAdId;
+//            bannerCell.bannerAd.rootViewController = self;
+//            [bannerCell.bannerAd loadRequest:[GADRequest request]];
+        
             _bannerAdCell = bannerCell;
             cell = bannerCell;
         //}

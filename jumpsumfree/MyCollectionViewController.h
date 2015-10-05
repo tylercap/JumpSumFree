@@ -29,9 +29,11 @@
 #import "MyWebViewController.h"
 #import <GooglePlayGames/GooglePlayGames.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import "FlurryAdInterstitial.h"
+#import "FlurryAdInterstitialDelegate.h"
 
 @interface MyCollectionViewController : UICollectionViewController
-<UICollectionViewDataSource, GADInterstitialDelegate, GPGStatusDelegate>
+<UICollectionViewDataSource, FlurryAdInterstitialDelegate, GPGStatusDelegate>
 
 @property (nonatomic, weak) IBOutlet MyCollectionViewLayout *layout;
 @property (strong, nonatomic) Gameboard *gameboard;
@@ -40,7 +42,7 @@
 @property (nonatomic) NSInteger currentScore;
 @property (strong, atomic) UICollectionViewCell* movingCell;
 
-@property (strong, nonatomic) GADInterstitial *interstitial;
+@property (nonatomic, strong) FlurryAdInterstitial* adInterstitial;
 @property (nonatomic) Boolean signedIn;
 @property (nonatomic) Boolean silentlySigningIn;
 

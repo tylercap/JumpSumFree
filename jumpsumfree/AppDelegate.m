@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Flurry.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,8 @@
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
     pageControl.backgroundColor = [UIColor whiteColor];
+    
+    [Flurry startSession:@"KWR9GJW58CHM69F7GX58"];
     
     return YES;
 }

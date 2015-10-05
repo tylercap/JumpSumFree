@@ -6,12 +6,12 @@
 //  Copyright (c) 2015 Tyler Cap. All rights reserved.
 //
 
-@import GoogleMobileAds;
-
 #import <UIKit/UIKit.h>
+#import "FlurryAdBanner.h"
+#import "FlurryAdBannerDelegate.h"
 
-@interface MyBannerCell : UICollectionViewCell
+@interface MyBannerCell : UICollectionViewCell <FlurryAdBannerDelegate>
 
-@property (weak, nonatomic) IBOutlet GADBannerView *bannerAd;
+- (void)loadAd:(UIViewController*)parent;
 
 @end
