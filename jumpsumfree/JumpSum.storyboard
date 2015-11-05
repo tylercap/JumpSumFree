@@ -118,8 +118,22 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mX-mN-haw">
+                                            <rect key="frame" x="-2" y="-4" width="54" height="58"/>
+                                        </view>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="6mX-mN-haw" firstAttribute="leading" secondItem="gSk-i4-N9I" secondAttribute="leadingMargin" constant="-10" id="XBU-al-gR4"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="6mX-mN-haw" secondAttribute="bottom" constant="-12" id="eAE-dB-me4"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="6mX-mN-haw" secondAttribute="trailing" constant="-10" id="ih1-su-z7Z"/>
+                                    <constraint firstItem="6mX-mN-haw" firstAttribute="top" secondItem="gSk-i4-N9I" secondAttribute="topMargin" constant="-12" id="zJP-Xb-qst"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="childView" destination="6mX-mN-haw" id="Akg-il-Ilz"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

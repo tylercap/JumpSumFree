@@ -26,6 +26,9 @@
     
     [Flurry startSession:@"KWR9GJW58CHM69F7GX58"];
     
+//    [Flurry setDebugLogEnabled:YES];
+//    [Flurry setLogLevel:FlurryLogLevelAll];
+    
     return YES;
 }
 

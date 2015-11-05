@@ -11,6 +11,8 @@
 #import "FlurryAdBannerDelegate.h"
 
 @interface MyBannerCell : UICollectionViewCell <FlurryAdBannerDelegate>
+@property (weak, nonatomic) IBOutlet UIView *childView;
+@property (nonatomic, strong) UIViewController *parent;
 
 - (void)loadAd:(UIViewController*)parent;
 
